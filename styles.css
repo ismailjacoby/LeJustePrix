@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #fffcf2;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav{
+    font-family: 'Satisfy', cursive;
+    background-color: #252422;
+    color: #fffcf2;
+    padding: 5px;
+    text-align: center;
+    font-size: 2em; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+input{
+    background-color: #fffcf2;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #252422;
+    color: #252422;
+    margin-bottom: 2em;
+}
+
+#main-content{
+    margin-top: 2em;
+    justify-content: center;
+    text-align: center;
+}
+
+button{
+    border: 1px solid #252422;
+    background-color: #ccc5b9;
+    padding: 10px;
+    border-radius: 10px;
+    color: #252422;
+    
+}
+#button-reset{
+    background-color: #ccc5b9;
+}
+
+#button-reset:hover{
+    background-color: #fffcf2;
+}
+
+#button-reset:hover{
+    background-color: #eb5e28;
+}
+
+button:hover{
+    background-color: #fffcf2;
+    border-radius: 10px;
+}
+
+button:active{
+    background-color: #eb5e28;
+}
+
+#button-clear:hover{
+    background-color: #fffcf2;
+}
+
+#button-clear:active{
+    background-color: #eb5e28;
+}
+
+#button-clear{
+    background-color: #eb5e28;
+}
+
+#clear-button{
+    width: 0.75em;
+    height: auto;
+}
+
+#message-higher{
+    max-width: 70vw;
+    background-color: #eb5e28;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.01em;
+    margin-bottom: 10px;
+    color: #252422;
+    border-radius: 10px;
+}
+
+#message-lower{
+    max-width: 70vw;
+    background-color: #eb5e28;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.01em;
+    margin-bottom: 10px;
+    color: #252422;
+    border-radius: 10px;
+}
+
+#message-found{
+    max-width: 70vw;
+    background-color: #5feb28;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.01em;
+    margin-bottom: 10px;
+    color: #252422;
+    border-radius: 10px;
+}
+
+table{
+    text-align: center;
+    
+    font-size: 0.75em;
+}
+
+#restart-yes{
+    background-color: #5feb28;
+    border-radius: 50%;
+    border: none;
+}
+
+#restart-no{
+    background-color: #eb5e28;
+    border-radius: 50%;
+    border: none;
+}
+
+#restart-yes:hover{
+    border: 1px solid #252422;
+}
+
+#restart-no:hover{
+    border: 1px solid #252422;
+}
+
+
