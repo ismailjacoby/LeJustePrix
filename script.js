@@ -80,22 +80,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
     buttonOui.addEventListener('click', function(event){
         event.preventDefault();
-        
         yes();
     });
 
     buttonNon.addEventListener('click', function(event){
         event.preventDefault();
-        
         non();
     });
 });
 
-  
-
-//Fonction pour verifier l'entree de l'utilisateur
 function submit() {
-    event.preventDefault()
     let userInputValue = parseInt(userInput.value);
     if (userInputValue === randomNumber) { 
         let newDiv = document.createElement('div');
@@ -143,7 +137,6 @@ function submit() {
     }
 }
 
-
 function restart(buttonOui, buttonNon) {
     let newH3 = document.createElement('h3');
     newH3.textContent = "Voulez vous rejouer?";
@@ -154,7 +147,6 @@ function restart(buttonOui, buttonNon) {
     restartDiv.appendChild(buttonNon);
 }
 
-
 function yes(){
     clearAffichage();
     clearRejouer();
@@ -163,6 +155,7 @@ function yes(){
     randomNumber = Math.floor(Math.random() * 1001);
     tentative.textContent = "0";
 }
+
 function non(){
     clearAffichage();
     clearRejouer();
@@ -184,6 +177,7 @@ function enableForm(){
     buttonReset.disabled = false;
     buttonReset.style.backgroundColor = "#ccc5b9";
 }
+
 function disableForm(){
     userInput.disabled = true;
     userInput.style.backgroundColor = "#ccc";
@@ -195,12 +189,12 @@ function disableForm(){
     buttonReset.style.backgroundColor = "#ccc";
 }
 
-//Clear
 function clearAffichage() {
     while (affichage.firstChild) {
         affichage.removeChild(affichage.firstChild);
     }
 }
+
 function clearRejouer() {
     while (restartDiv.firstChild) {
         restartDiv.removeChild(restartDiv.firstChild);
