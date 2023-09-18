@@ -1,9 +1,12 @@
+*{
+    cursor: crosshair;
+}
+
 body{
     margin: 0;
     padding: 0;
     background-color: #fffcf2;
     font-family: 'Roboto', sans-serif;
-    cursor: crosshair;
 }
 
 nav{
