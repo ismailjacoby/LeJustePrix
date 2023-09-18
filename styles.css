@@ -80,6 +80,7 @@ button:active{
     height: auto;
 }
 
+
 #message-higher{
     max-width: 70vw;
     background-color: #eb5e28;
@@ -123,12 +124,16 @@ table{
     background-color: #5feb28;
     border-radius: 50%;
     border: none;
+    margin: 1em;
+    padding: 2em;
 }
 
 #restart-no{
     background-color: #eb5e28;
     border-radius: 50%;
     border: none;
+    margin: 1em;
+    padding: 2em;
 }
 
 #restart-yes:hover{

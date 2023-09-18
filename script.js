@@ -206,4 +206,3 @@ function clearRejouer() {
         restartDiv.removeChild(restartDiv.firstChild);
     }
 }
-
