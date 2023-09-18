@@ -3,6 +3,7 @@ body{
     padding: 0;
     background-color: #fffcf2;
     font-family: 'Roboto', sans-serif;
+    cursor: crosshair;
 }
 
 nav{
@@ -38,17 +39,18 @@ button{
     padding: 10px;
     border-radius: 10px;
     color: #252422;
-    
+    cursor: pointer;
 }
 #button-reset{
     background-color: #ccc5b9;
+    cursor: pointer;
 }
 
 #button-reset:hover{
     background-color: #fffcf2;
 }
 
-#button-reset:hover{
+#button-reset:active{
     background-color: #eb5e28;
 }
 
@@ -136,5 +138,3 @@ table{
 #restart-no:hover{
     border: 1px solid #252422;
 }
-
-

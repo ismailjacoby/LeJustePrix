@@ -23,6 +23,7 @@ let messageLower ="Le nombre recherché est plus bas";
 let messageFound = "Félicitation vous avez trouver le nombre!";
 let messageGameOver = "Game Over! Vous avez dépassé le nombre maximum d'essais autorisés.";
 
+console.log(randomNumber);
 
 userInput.addEventListener('input', function(event) {
     let inputValue = userInput.value;
@@ -41,11 +42,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     buttonOui.addEventListener('click', function(event){
         event.preventDefault();
+        
         yes();
     });
 
     buttonNon.addEventListener('click', function(event){
         event.preventDefault();
+        
         non();
     });
 });
@@ -60,22 +63,35 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-//Clear - Onclick
-clearButton.addEventListener('click', function(event) {
+
+clearButton.addEventListener('click', function (event) {
     event.preventDefault();
     clearAffichage();
 });
-buttonOui.addEventListener('click',function(event){
-    event.preventDefault();
-    yes();
-});
-buttonNon.addEventListener('click',function(event){
-    event.preventDefault();
-    non();
+  
+document.addEventListener('DOMContentLoaded', function () {
+    buttonOui = document.createElement('button');
+    buttonOui.setAttribute('id', 'restart-yes');
+    buttonOui.textContent = "Oui";
+
+    buttonNon = document.createElement('button');
+    buttonNon.setAttribute('id', 'restart-no');
+    buttonNon.textContent = "Non";
+
+    buttonOui.addEventListener('click', function(event){
+        event.preventDefault();
+        
+        yes();
+    });
+
+    buttonNon.addEventListener('click', function(event){
+        event.preventDefault();
+        
+        non();
+    });
 });
 
-
-//Fonctions
+  
 
 //Fonction pour verifier l'entree de l'utilisateur
 function submit() {
